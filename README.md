@@ -84,7 +84,7 @@ observable.Subscribe(x => {
  });
  
 // Delete Data
- db.Update("tableName","Item = @Item",statement =>{
+ db.Delete("tableName","Item = @Item",statement =>{
  statement.Bind("@Item",1);
  });
  
